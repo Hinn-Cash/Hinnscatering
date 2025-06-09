@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Hinn's Catering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fffaf6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #e85a4f;
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-weight: 600;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: aqua;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .about-container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .about-container h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #e85a4f;
+    }
+
+    .about-container p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .value-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 1.2rem;
+      text-align: center;
+    }
+
+    .value-card h3 {
+      color: #e85a4f;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Hinn's <span style="color:aqua;">Catering</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="about-container">
+    <h1>About Us</h1>
+    <p>
+      Hinn's Catering is your go-to choice for delicious, affordable, and professionally-prepared meals in Nairobi.
+      From local favorites like chapati, ugali, and matumbo to custom event catering, we bring flavor to every table.
+    </p>
+    <p>
+      Our team is made up of passionate chefs, planners, and hospitality experts who are committed to creating memorable dining experiences for individuals, families, and corporate events alike.
+    </p>
+
+    <div class="values">
+      <div class="value-card">
+        <h3>Quality Ingredients</h3>
+        <p>We use only fresh, locally-sourced ingredients to ensure our meals are healthy and flavorful.</p>
+      </div>
+      <div class="value-card">
+        <h3>Affordability</h3>
+        <p>Our prices are designed to accommodate everyone without compromising on taste or quality.</p>
+      </div>
+      <div class="value-card">
+        <h3>Customer Satisfaction</h3>
+        <p>Your happiness is our mission. We tailor our services to meet your unique needs and preferences.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Hinn's Catering. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

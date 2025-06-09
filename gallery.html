@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Hinn's Catering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fffaf6;
+      color: #333;
+    }
+
+    header {
+      background: #e85a4f;
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-weight: 600;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: aqua;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .page-header {
+      background: #e85a4f;
+      text-align: center;
+      padding: 1.5rem 1rem 0.5rem;
+      color: white;
+    }
+
+    .gallery-container {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Hinn's <span style="color:aqua;">Catering</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>Food Gallery</h1>
+    <p>A glimpse of what we serve</p>
+  </div>
+
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <img src="images/beef.jfif" alt="Chapati">
+      <img src="images/chapati.jfif" alt="Ugali with Meat">
+      <img src="images/pork.jfif" alt="Matumbo">
+      <img src="images/ugali.jfif" alt="Rice and Beans">
+      <img src="images/matumbo.jfif" alt="Minced Meat">
+      <img src="images/beef.jfif" alt="Chapati">
+      <img src="images/chapati.jfif" alt="Ugali with Meat">
+      <img src="images/pork.jfif" alt="Matumbo">
+      <img src="images/ugali.jfif" alt="Rice and Beans">
+      <img src="images/matumbo.jfif" alt="Minced Meat">
+      <img src="images/ugali.jfif" alt="Rice and Beans">
+      <img src="images/matumbo.jfif" alt="Minced Meat">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Hinn's Catering. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
